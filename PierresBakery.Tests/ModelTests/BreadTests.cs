@@ -27,5 +27,16 @@ namespace BreadTests.Tests
       int result = newBread.Number;
       Assert.AreEqual(number, result);
     }
+
+    [TestMethod]
+    public void SetNumber_SetNumber_Number()
+    {
+      int number = 1;
+      Bread newBread = new Bread(number);
+      int updatedNumber = 2;
+      newBread.Number = updatedNumber;
+      int result = newBread.Number;
+      Assert.AreEqual(updatedNumber, result);
+    }
   }
 }
