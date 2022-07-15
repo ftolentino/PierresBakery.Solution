@@ -4,10 +4,12 @@ namespace PierresBakery.Models
 {
   public class Bread
   {
+    // properties
+    public int Number { get; }
     // constructor
-    public Bread()
+    public Bread(int number)
     {
-      Console.WriteLine("Something");
+      Number = number;
     }
   }
 }
