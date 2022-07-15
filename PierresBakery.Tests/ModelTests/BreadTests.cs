@@ -40,7 +40,7 @@ namespace BreadTests.Tests
     }
 
     [TestMethod]
-    public void BreadCost_BreadCostNoDeal_Int()
+    public void BreadCost_ReturnBreadCostNoDeal_Int()
     {
       // Arrange
       int quantity = 1;
