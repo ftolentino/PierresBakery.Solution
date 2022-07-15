@@ -1,11 +1,11 @@
 using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using ProjectName.Models;
+using PierresBakery.Models;
 
-namespace ProjectName.Tests
+namespace PastryTests.Tests
 {
   [TestClass]
-  public class ClassNameTests // : IDisposable
+  public class PastryTests // : IDisposable
   {
     // public void Dispose()
     // {
@@ -13,10 +13,10 @@ namespace ProjectName.Tests
     // }
 
     [TestMethod]
-    public void NameOfMethodWeAreTesting_DescriptionOfBehavior_ExpectedReturnValue()
+    public void PastryConstructor_CreatesInstanceOfPastry_Pastry()
     {
-      // any necessary logic to prep for test; instantiating new classes, etc.
-      Assert.AreEqual(EXPECTED RESULT, CODE TO TEST);
+      Pastry newPastry = new Pastry();
+      Assert.AreEqual(typeof(Pastry), newPastry.GetType());
     }
   }
 }
