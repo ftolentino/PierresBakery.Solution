@@ -20,23 +20,35 @@ namespace BreadTests.Tests
     }
 
     [TestMethod]
-    public void GetNumber_ReturnNumber_Number()
+    public void GetQuantity_ReturnQauntity_Quantity()
     {
-      int number = 1;
-      Bread newBread = new Bread(number);
-      int result = newBread.Number;
-      Assert.AreEqual(number, result);
+      int quantity = 1;
+      Bread newBread = new Bread(quantity);
+      int result = newBread.Quantity;
+      Assert.AreEqual(quantity, result);
     }
 
     [TestMethod]
-    public void SetNumber_SetNumber_Number()
+    public void SetQuantity_SetQuantity_Quantity()
     {
-      int number = 1;
-      Bread newBread = new Bread(number);
-      int updatedNumber = 2;
-      newBread.Number = updatedNumber;
-      int result = newBread.Number;
-      Assert.AreEqual(updatedNumber, result);
+      int quantity = 1;
+      Bread newBread = new Bread(quantity);
+      int updatedQuantity = 2;
+      newBread.Quantity = updatedQuantity;
+      int result = newBread.Quantity;
+      Assert.AreEqual(updatedQuantity, result);
+    }
+
+    [TestMethod]
+    public void BreadCost_BreadCostNoDeal_Int()
+    {
+      // Arrange
+      int quantity = 1;
+      double breadCost = 5;
+      // Act
+      Bread newBread = new Bread(quantity);
+      // Assert
+      Assert.AreEqual(breadCost, newBread.BreadCost());
     }
   }
 }
