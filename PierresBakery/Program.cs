@@ -1,7 +1,7 @@
 using System;
-using ProjectName.Models;
+using PierresBakery.Models;
 
-namespace ProjectName
+namespace PierresBakery.Models
 {
   public class Program
   {
