@@ -6,6 +6,7 @@ namespace PierresBakery.Models
   {
     // properties
     private static double _Price = 5;
+    private double _Discount;
     public int Quantity { get; set; }
 
     // Price property
@@ -18,6 +19,7 @@ namespace PierresBakery.Models
     public Bread(int quantity)
     {
       _Price = Price;
+      _Discount = 0;
       Quantity = quantity;
     }
 
@@ -29,6 +31,10 @@ namespace PierresBakery.Models
         if (index == 0)
         {
           breadTotal += 0;
+        }
+        else if(index % 3 == 0)
+        {
+          breadTotal += _Price * _Discount;
         }
         else
         {
