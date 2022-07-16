@@ -4,10 +4,12 @@ namespace PierresBakery.Models
 {
   public class Pastry
   {
-    // properties, constructors, methods, etc. go here
-    public Pastry()
+    // properties
+    public int Quantity { get; set; }
+    // Pastry constructor
+    public Pastry(int quantity)
     {
-      Console.WriteLine("test");
+      Quantity = quantity;
     }
   }
 }
