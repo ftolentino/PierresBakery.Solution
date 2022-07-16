@@ -5,13 +5,8 @@ using PierresBakery.Models;
 namespace BreadTests.Tests
 {
   [TestClass]
-  public class BreadTests // : IDisposable
+  public class BreadTests 
   {
-    // public void Dispose()
-    // {
-    //   ClassName.ClearAll();
-    // }
-
     [TestMethod]
     public void BreadConstructor_CreatesInstanceOfBread_Bread()
     {
@@ -49,6 +44,18 @@ namespace BreadTests.Tests
       Bread newBread = new Bread(quantity);
       // Assert
       Assert.AreEqual(breadCost, newBread.BreadCost());
+    }
+
+    [TestMethod]
+    public void BreadTotal_ReturnBreadTotalDeal_Int()
+    {
+      // Arrange
+      int quantity = 3;
+      double breadTotal = 10;
+      // Act
+      Bread newBread = new Bread(quantity);
+      // Assert
+      Assert.AreEqual(breadTotal, newBread.BreadCost());
     }
   }
 }
