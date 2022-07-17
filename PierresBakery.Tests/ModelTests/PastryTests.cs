@@ -38,5 +38,29 @@ namespace PastryTests.Tests
       int result = newPastry.Quantity;
       Assert.AreEqual(updatedQuantity, result);
     }
+
+    [TestMethod]
+    public void PastryCost_ReturnPastryTotalNoDeal_Int()
+    {
+      // Arrange
+      int quantity = 1;
+      double pastryCost = 2;
+      // Act
+      Pastry newPastry = new Pastry(quantity);
+      // Assert
+      Assert.AreEqual(pastryCost, newPastry.PastryCost());
+    }
+
+    [TestMethod]
+    public void PastryCost_ReturnPastryTotalDealOne_Int()
+    {
+      // Arrange
+      int quantity = 6;
+      double pastryTotal = 10;
+      // Act
+      Pastry newPastry = new Pastry(quantity);
+      // Assert
+      Assert.AreEqual(pastryTotal, newPastry.PastryCost());
+    }
   }
 }

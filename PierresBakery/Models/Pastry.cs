@@ -7,7 +7,6 @@ namespace PierresBakery.Models
     // properties
     private static double _Price = 2;
     private double _DealOne;
-    private double _DealTwo;
     public int Quantity { get; set; }
 
     // Price property
@@ -22,7 +21,6 @@ namespace PierresBakery.Models
     {
       _Price = Price;
       _DealOne = 1;
-      _DealTwo = 2;
       Quantity = quantity;
     }
 
@@ -35,13 +33,10 @@ namespace PierresBakery.Models
         {
           pastryTotal += 0;
         }
+        // every 3rd pastry is $1 off
         else if (index % 3 == 0)
         {
           pastryTotal += _Price - _DealOne;
-        }
-        else if (index % 6 == 0)
-        {
-          pastryTotal += _Price - _DealTwo;
         }
         else
         {
@@ -52,10 +47,3 @@ namespace PierresBakery.Models
     }
   }
 }
-
-// Pastry Discount
-// 1 = $2
-// 3 = $5 $1 off
-// 4 = 7 $1 off
-// 5 = 9 $1 off
-// 6 = 10 $2 off

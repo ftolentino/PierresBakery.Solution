@@ -11,8 +11,8 @@ namespace PierresBakery.Models
   {
     Console.WriteLine("Welcome to Pierre's Bakery!");
     Console.WriteLine("A loaf of bread costs $5 and a pastry is $2.");
-    Console.WriteLine("For every 2 loaves of bread, you get the 3rd free!");
-    Console.WriteLine("Pastry Deals: 3 pastries for $5, 4 pastries for $7, 5 pastries for $9, 6 pastries for $10");
+    Console.WriteLine("Bread Deals: For every 2 loaves of bread, you get the 3rd free!");
+    Console.WriteLine("Pastry Deals: For every 3 pastries, you get $1 off!");
     Console.WriteLine("Enter how many loaves of bread you would like to purchase");
 
     int breadOrder = int.Parse(Console.ReadLine());
