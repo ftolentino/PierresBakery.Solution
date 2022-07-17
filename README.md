@@ -34,9 +34,9 @@ _Create a C# console application for a bakery that includes the following functi
 
 |                    | Minimum Product Features |
 | ------------------ | ------------------------ |
-| :heavy_check_mark: |                          |
-| :heavy_check_mark: |                          |
-| :heavy_check_mark: |                          |
+| :heavy_check_mark: | User can enter the amount of loaves and pastries they'd like |
+| :heavy_check_mark: | Pierre's Deals applied |
+| :heavy_check_mark: | Return total cost of order |
 
 ## Setup/Installation Requirements
 
