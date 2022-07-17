@@ -13,17 +13,21 @@ namespace PierresBakery.Models
     Console.WriteLine("A loaf of bread costs $5 and a pastry is $2.");
     Console.WriteLine("Bread Deals: For every 2 loaves of bread, you get the 3rd free!");
     Console.WriteLine("Pastry Deals: For every 3 pastries, you get $1 off!");
-    Console.WriteLine("Enter how many loaves of bread you would like to purchase");
 
+    Console.WriteLine("Enter how many loaves of bread you would like to purchase");
     int breadOrder = int.Parse(Console.ReadLine());
     Bread userBread = new Bread(breadOrder);
-    Console.WriteLine(userBread.BreadCost());
+    double userBreadTotal = userBread.BreadCost();
+    Console.WriteLine("Your bread total is $" + userBreadTotal);
 
     Console.WriteLine("Enter how many pastries you would like to purchase");
-
     int pastryOrder = int.Parse(Console.ReadLine());
     Pastry userPastry = new Pastry(pastryOrder);
-    Console.WriteLine(userPastry.PastryCost());
+    double userPastryTotal = userPastry.PastryCost();
+    Console.WriteLine("Your pastry total is $" + userPastryTotal);
+
+    double usertotalOrder = userBreadTotal + userPastryTotal;
+    Console.WriteLine("Your total order is $" + usertotalOrder);
   }
   }
 }
@@ -33,7 +37,4 @@ namespace PierresBakery.Models
 
 // Pastry Discount
 // 1 = $2
-// 3 = $5 $1 off
-// 4 = 7 $1 off
-// 5 = 9 $1 off
-// 6 = 10 $2 off
+// every 3rd pastry is $1 off
