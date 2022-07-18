@@ -45,7 +45,7 @@ _Create a C# console application for a bakery that includes the following functi
 2. Navigate to project directory from your terminal by entering the following:
 
 ```
-cd CSharpTemplate.Solution
+cd PierresBakery.Solution
 ```
 
 * Install `Microsoft .NET SDK 5.0`
