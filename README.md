@@ -52,7 +52,7 @@ cd PierresBakery.Solution
 
 * Navigate to PierresBakery directory and run `$ dotnet run` in your terminal.
 
-* For testing navigate to ProjectName.Tests and run `$ dotnet test` in your terminal.
+* For testing navigate to PierresBakery.Tests and run `$ dotnet test` in your terminal.
 
 ## Known Bugs
 
