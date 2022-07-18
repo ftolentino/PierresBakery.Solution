@@ -50,7 +50,7 @@ cd PierresBakery.Solution
 
 * Install `Microsoft .NET SDK 5.0`
 
-* Navigate to ProjectName directory and run `$ dotnet run` in your terminal.
+* Navigate to PierresBakery directory and run `$ dotnet run` in your terminal.
 
 * For testing navigate to ProjectName.Tests and run `$ dotnet test` in your terminal.
 
